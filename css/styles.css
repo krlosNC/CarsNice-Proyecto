@@ -1,0 +1,154 @@
+@media (min-width : 992px) {
+    #iniciar_seccion{
+        display: none;
+    }
+}
+@media (max-width : 992px) {
+    #img_iniciar_sesion{
+        display: none;
+    }
+}
+
+@media (max-width : 576px) {
+    #nombre_empresa{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 450px;
+    }
+    
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+@media (min-width: 576px) {
+    #marca_destacados {
+        font-size: 35px !important;
+    }
+
+    #modelo_destacados {
+        font-size: 25px !important;
+    }
+
+    #btn-destacados {
+        padding: 10px 15px 10px 15px !important;
+    }
+}
+
+@media (max-width: 767px) {
+  #años_experiencia{
+    display: flex;
+  }
+  #imagen_experiencia{
+    width: 50%;
+  }
+  #misi_visi_valo{
+    width: 80%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #horario_empresa {
+    display: none;
+    color: red;
+  }
+}
+
+@media (min-width: 992px) {
+  #contactanos {
+    display: none;
+  }
+}
+
+
+#instagram{
+  background: rgb(162,0,255);
+background: linear-gradient(106deg, rgba(162,0,255,1) 0%, rgba(255,58,244,1) 23%, rgba(255,0,70,1) 72%, rgba(255,183,0,1) 100%);
+}
+
+/* ============================================= */
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+/* ================================================================= */
+
+  @media (min-width: 40em) {
+
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+
+
+

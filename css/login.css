@@ -1,0 +1,37 @@
+:root {
+  --dark: #16191c;
+  --dark-x: #1e2126;
+  --light: #ffffff;
+}
+body {
+  color: var(--light) !important;
+  height: 100vh;
+}
+.form-control,
+.btn {
+  min-height: 3.125rem;
+  line-height: initial;
+}
+.img-1 {
+  background-image: url(../image/andre-tan-lRrNccxrTfQ-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.img-2 {
+  background-image: url(../image/equipo4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.h2 {
+  text-transform: capitalize;
+}
+.bg-dark {
+  background-color: var(--dark) !important ;
+}
+.bg-dark-x {
+  background-color: var(--dark-x) !important;
+}
+
+input {
+  color: var(--light) !important;
+}

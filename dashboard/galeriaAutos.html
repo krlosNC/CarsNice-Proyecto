@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Vehiculos</title>
+    <link rel="shortcut icon" href="../icons/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- style -->
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        #card {
+            height:550px;
+            overflow:auto;
+        }
+
+        @media(max-width:575px){
+            #card{
+                height: auto;
+            }
+        }
+
+
+
+
+    </style>
+
+    <!-- fin style -->
+
+</head>
+
+<body>
+    <!-- ======================================================== -->
+    <!-- ENCABEZADO -->
+    <!-- ======================================================== -->
+    <header class="container-fluid bg-black d-flex justify-content-center" id="contactanos">
+        <p class="text-light mb-0 p-2 fs-7" id="contactanos">Contactanos +57 320 769 9910</p>
+    </header>
+    <div class="container-fluid bg-black p-0 text-white ">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>CarsNice, Calle 64N, Popayán, Cauca</small>
+                </div>
+                <div class="d-inline-flex align-items-center py-3" id="horario_empresa">
+                    <small class="far fa-clock text-primary me-2" id="horario_empresa"></small>
+                    <small id="horario_empresa">Lunes - Viernes : 07.00 AM - 09.00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+57 320 769 9910</small>
+                </div>
+                <div class="d-inline-flex align-items-center">
+                    <a class="btn bg-primary btn-sm-square text-white me-1 mt-2" href=""><img
+                            src="../icons/facebook.svg" alt="facebook"></i></a>
+                    <a class="btn bg-white btn-sm-square text-white me-1 mt-2" href=""><img src="../icons/twitter.svg"
+                            alt="twitter"></i></a>
+                    <a class="btn btn-sm-square text-white me-0 mt-2" href="" id="instagram"><img
+                            src="../icons/instagram.svg" alt="instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-light pt-0 pb-0">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../icons/logo.svg" alt="Logo_empresa" id="logo_empresa" width="150" height="70"
+                    class="d-inline-block align-text-top">
+                <span id="nombre_empresa">CarsNice</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../dashboard/galeriaAutos.html">Catalogo de vehiculos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html#sobre_nosotros">Sobre Nosotros</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html#equipo">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.google.com/?hl=es" target="_blank"><img
+                                src="../icons/user_2.svg" alt="usuario" width="40" height="40"
+                                id="img_iniciar_sesion"><span id="iniciar_seccion">Iniciar sesión</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <hr class="featurette-divider">
+
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">CarsNice</h1>
+                <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nobis qui voluptates obcaecati autem dolorem est, ex, id reprehenderit labore quia enim sapiente ut totam praesentium facere delectus saepe magnam.</p>
+                <p>
+                    <div class="col-lg-6 col-md-8 group mx-auto">
+                        <select class="form-select" aria-label="Default select example" id="filtro">
+                            <option selected>Todos los vehiculos</option>
+                            <option value="AUDI">AUDI</option>
+                            <option value="BMW">BMW</option>
+                            <option value="CHEVROLET">CHEVROLET</option>
+                            <option value="FERRARI">FERRARI</option>
+                            <option value="LAMBORGHINI">LAMBORGHINI</option>
+                            <option value="FORD">FORD</option>
+                        </select>
+                        <input type="button" class="btn btn-primary my-2" onclick="filtros(filtro.value)" value="Filtrar colección">
+                    </div>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col autos AUDI">
+                    <div class="card shadow-sm" id="card">
+                        <img src="../image/audi1.jpg" alt="Audi R8" class="rounded" title="Audi R8">
+                        <div class="card-body">
+                            <h2>Audi R8</h2>
+                            <p class="card-text">El motor V10 atmosférico, ubicado entre los ejes, es el corazón del
+                                Audi R8 Coupé V10 performance quattro. En la versión performance, este motor genera 50
+                                CV adicionales.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
+                                        data-bs-target="#Audi_R8">Mas información</button>
+                                    <button type="button" class="btn btn-sm btn-success ">Cotizar</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="Audi_R8" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title " id="exampleModalLabel">Audi R8</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../image/audi1.jpg" class="d-block w-100" alt="Audi R8"
+                                                title="Audi R8" width="100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/audi1-r8.jpg" class="d-block w-100" alt="Audi R8"
+                                                title="Audi R8" width="100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/audi1-r-8.jpg" class="d-block w-100" alt="Audi R8"
+                                                title="Audi R8" width="100%">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <p>Diseñado y concebido para reflejar el carácter de un auto de competencia, estilo
+                                    coupé y líneas muy particulares, su finalidad deportiva rodando sobre rines de 20
+                                    pulgadas.
+                                    Cuenta con un motor V10 aspirado de 5.2 litros alimentado por inyección dual,
+                                    ubicado en posición central para un centro de gravedad bajo, generando un máximo de
+                                    610 caballos de potencia y un torque de 560 Nm. Así, logra una velocidad máxima de
+                                    330 km/h y una aceleración de 0 a 100 km/h en apenas 3,2 segundos. 
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-success">Cotizar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col autos AUDI">
+                    <div class="card shadow-sm" id="card">
+                        <img src="../image/audi2.jpg" alt="Audi e-tron Sportback" title="Audi e-tron Sportback"
+                            class="rounded">
+
+                        <div class="card-body">
+                            <h2>Audi e-tron Sportback</h2>
+                            <p class="card-text">Equipado con tracción quattro en las cuatro ruedas, hasta 300 kW de
+                                potencia y una autonomía de hasta 452 km: prepárate para divertirte al volante.</p><br>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
+                                        data-bs-target="#Audi-Etron">Mas información</button>
+                                    <button type="button" class="btn btn-sm btn-success">Cotizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="Audi-Etron" tabindex="-1" aria-labelledby="Audi_E_tron"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title " id="Audi_E_tron">Audi e-tron</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="Audi_Etro" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../image/audi1.jpg" class="d-block w-100" alt="Audi e-tron"
+                                                title="Audi e-tron" width="100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/audi1-r8.jpg" class="d-block w-100" alt="Audi e-tron"
+                                                title="Audi e-tron" width="100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/audi1-r-8.jpg" class="d-block w-100" alt="Audi e-tron"
+                                                title="Audi e-tron" width="100%">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#Audi_Etro" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#Audi_Etro" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <p>Diseñado y concebido para reflejar el carácter de un auto de competencia, estilo
+                                    coupé y líneas muy particulares, su finalidad deportiva rodando sobre rines de 20
+                                    pulgadas.
+                                    Cuenta con un motor V10 aspirado de 5.2 litros alimentado por inyección dual,
+                                    ubicado en posición central para un centro de gravedad bajo, generando un máximo de
+                                    610 caballos de potencia y un torque de 560 Nm. Así, logra una velocidad máxima de
+                                    330 km/h y una aceleración de 0 a 100 km/h en apenas 3,2 segundos.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-success">Cotizar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col autos BMW">
+                    <div class="card shadow-sm" id="card">
+                        <img src="../image/bmw-z4.jpg" alt="BMW Z4" title="BMW Z4" class="rounded">
+
+                        <div class="card-body">
+                            <h2>BMW Z4</h2>
+                            <p class="card-text">BMW Z4. Un roadster que no pudo ser mejor: abierto, deportivo e
+                                inflexible. Con una potente dinámica de conducción y un diseño progresivo, sólo tiene un
+                                objetivo: la libertad entre el camino y el cielo abierto</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
+                                        data-bs-target="#bmw_z">Mas información</button>
+                                    <button type="button" class="btn btn-sm btn-success">Cotizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="bmw_z" tabindex="-1" aria-labelledby="titulo"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title " id="titulo">BMW Z4</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="bmw_z4" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../image/audi1.jpg" class="d-block w-100" alt="BMW Z4"
+                                                title="BMW Z4" width="100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/audi1-r8.jpg" class="d-block w-100" alt="BMW Z4"
+                                                title="BMW Z4" width="100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/audi1-r-8.jpg" class="d-block w-100" alt="BMW Z4"
+                                                title="BMW Z4" width="100%">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#bmw_z4" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#bmw_z4" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <p>Diseñado y concebido para reflejar el carácter de un auto de competencia, estilo
+                                    coupé y líneas muy particulares, su finalidad deportiva rodando sobre rines de 20
+                                    pulgadas.
+                                    Cuenta con un motor V10 aspirado de 5.2 litros alimentado por inyección dual,
+                                    ubicado en posición central para un centro de gravedad bajo, generando un máximo de
+                                    610 caballos de potencia y un torque de 560 Nm. Así, logra una velocidad máxima de
+                                    330 km/h y una aceleración de 0 a 100 km/h en apenas 3,2 segundos.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-success">Cotizar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col autos CHEVROLET">
+                    <div class="card shadow-sm" id="card">
+                        <img src="../image/slider1.jpg" alt="Camaro SIX SS" title="Camaro SIX SS" class="rounded">
+
+                        <div class="card-body">
+                            <h3>Camaro SIX SS</h3>
+                            <p class="card-text">Camaro SIX SS. Un roadster que no pudo ser mejor: abierto, deportivo e
+                                inflexible. Con una potente dinámica de conducción y un diseño progresivo</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
+                                        data-bs-target="#Camaro_six">Mas información</button>
+                                    <button type="button" class="btn btn-sm btn-success">Cotizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="Camaro_six" tabindex="-1" aria-labelledby="CamaroSix"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title " id="CamaroSix">Camaro SIX SS</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="Camaro-SIX" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../image/audi1.jpg" class="d-block w-100" alt="Camaro six ss"
+                                                title="Camaro six ss" width="100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/audi1-r8.jpg" class="d-block w-100" alt="Camaro six ss"
+                                                title="Camaro six ss" width="100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/audi1-r-8.jpg" class="d-block w-100" alt="Camaro six ss"
+                                                title="Camaro six ss" width="100%">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#Camaro-SIX" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#Camaro-SIX" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <p>Diseñado y concebido para reflejar el carácter de un auto de competencia, estilo
+                                    coupé y líneas muy particulares, su finalidad deportiva rodando sobre rines de 20
+                                    pulgadas.
+                                    Cuenta con un motor V10 aspirado de 5.2 litros alimentado por inyección dual,
+                                    ubicado en posición central para un centro de gravedad bajo, generando un máximo de
+                                    610 caballos de potencia y un torque de 560 Nm. Así, logra una velocidad máxima de
+                                    330 km/h y una aceleración de 0 a 100 km/h en apenas 3,2 segundos.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-success">Cotizar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col autos FERRARI">
+                    <div class="card shadow-sm" id="card">
+                        <img src="../image/slider2.jpg" alt="Ferrari STEEDA" class="rounded" title="Ferrari STEEDA">
+
+                        <div class="card-body">
+                            <h2>Ferrari STEEDA</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
+                                        data-bs-target="#Ferrari_STEEDA">Mas información</button>
+                                    <button type="button" class="btn btn-sm btn-success">Cotizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="Ferrari_STEEDA" tabindex="-1" aria-labelledby="FerrariSteeda"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title " id="FerrariSteeda">Ferrari STEEDA</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="Ferrari-Steeda" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../image/slider2.jpg" class="d-block w-100" alt="Ferrari STEEDA"
+                                                title="Ferrari STEEDA" width="100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/slider2.jpg" class="d-block w-100" alt="Ferrari STEEDA"
+                                                title="Ferrari STEEDA" width="100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/slider2.jpg" class="d-block w-100" alt="Ferrari STEEDA"
+                                                title="Ferrari STEEDA" width="100%">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#Ferrari-Steeda" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#Ferrari-Steeda" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <p>Diseñado y concebido para reflejar el carácter de un auto de competencia, estilo
+                                    coupé y líneas muy particulares, su finalidad deportiva rodando sobre rines de 20
+                                    pulgadas.
+                                    Cuenta con un motor V10 aspirado de 5.2 litros alimentado por inyección dual,
+                                    ubicado en posición central para un centro de gravedad bajo, generando un máximo de
+                                    610 caballos de potencia y un torque de 560 Nm. Así, logra una velocidad máxima de
+                                    330 km/h y una aceleración de 0 a 100 km/h en apenas 3,2 segundos.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-success">Cotizar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col autos LAMBORGHINI">
+                    <div class="card shadow-sm" id="card">
+                        <img src="../image/slider3.jpg" alt="LAMBORGHINI Huracán STO" class="rounded"
+                            title="LAMBORGHINI Huracán STO ">
+
+                        <div class="card-body">
+                            <h3>LAMBORGHINI Huracán</h3>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
+                                        data-bs-target="#LAMBORGHINI">Mas información</button>
+                                    <button type="button" class="btn btn-sm btn-success">Cotizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="LAMBORGHINI" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title " id="exampleModalLabel">LAMBORGHINI Huracán STO</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="LAMBORGHINI-Huracan" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../image/audi1.jpg" class="d-block w-100"
+                                                alt="LAMBORGHINI Huracán STO" title="LAMBORGHINI Huracán STO"
+                                                width="100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/audi1-r8.jpg" class="d-block w-100"
+                                                alt="LAMBORGHINI Huracán STO" title="LAMBORGHINI Huracán STO"
+                                                width="100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/audi1-r-8.jpg" class="d-block w-100"
+                                                alt="LAMBORGHINI Huracán STO" title="LAMBORGHINI Huracán STO"
+                                                width="100%">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#LAMBORGHINI-Huracan" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#LAMBORGHINI-Huracan" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <p>Diseñado y concebido para reflejar el carácter de un auto de competencia, estilo
+                                    coupé y líneas muy particulares, su finalidad deportiva rodando sobre rines de 20
+                                    pulgadas.
+                                    Cuenta con un motor V10 aspirado de 5.2 litros alimentado por inyección dual,
+                                    ubicado en posición central para un centro de gravedad bajo, generando un máximo de
+                                    610 caballos de potencia y un torque de 560 Nm. Así, logra una velocidad máxima de
+                                    330 km/h y una aceleración de 0 a 100 km/h en apenas 3,2 segundos.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-success">Cotizar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col autos FORD">
+                    <div class="card shadow-sm" id="card">
+                        <img src="../image/slider4.jpg" alt="FORD Mustang" class="rounded" title="FORD Mustang">
+
+                        <div class="card-body">
+                            <h2>FORD Mustang</h2>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quia aperiam sapiente voluptates corporis unde libero architecto voluptas, explicabo neque hic nemo earum sint minima at nulla impedit nesciunt eligendi!</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
+                                        data-bs-target="#FORD_Mustang">Mas información</button>
+                                    <button type="button" class="btn btn-sm btn-success">Cotizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="FORD_Mustang" tabindex="-1" aria-labelledby="FORD"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title " id="FORD">FORD Mustang</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="FORD_Mustang_" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../image/slider4.jpg" class="d-block w-100" alt="FORD Mustang"
+                                                title="FORD Mustang" width="100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/slider4.jpg" class="d-block w-100" alt="FORD Mustang"
+                                                title="FORD Mustang" width="100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/slider4.jpg" class="d-block w-100" alt="FORD Mustang"
+                                                title="FORD Mustang" width="100%">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#FORD_Mustang_" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#FORD_Mustang_" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <p>Diseñado y concebido para reflejar el carácter de un auto de competencia, estilo
+                                    coupé y líneas muy particulares, su finalidad deportiva rodando sobre rines de 20
+                                    pulgadas.
+                                    Cuenta con un motor V10 aspirado de 5.2 litros alimentado por inyección dual,
+                                    ubicado en posición central para un centro de gravedad bajo, generando un máximo de
+                                    610 caballos de potencia y un torque de 560 Nm. Así, logra una velocidad máxima de
+                                    330 km/h y una aceleración de 0 a 100 km/h en apenas 3,2 segundos.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-success">Cotizar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col autos CHEVROLET">
+                    <div class="card shadow-sm" id="card">
+                        <img src="../image/blazer.jpg" alt="Blazer RS" class="rounded" title="Blazer RS">
+
+                        <div class="card-body">
+                            <h2>Blazer RS</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odio quod vel possimus ex dolorem, consectetur fugit. Deserunt rem reiciendis, neque, perferendis aliquam ratione consequatur placeat blanditiis dignissimos velit quaerat!</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
+                                        data-bs-target="#Blazer">Mas información</button>
+                                    <button type="button" class="btn btn-sm btn-success">Cotizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="Blazer" tabindex="-1" aria-labelledby="Blazer_rs"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title" id="Blazer_rs">Blazer RS</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="BlazerRS" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../image/blazer.jpg" class="d-block w-100" alt="Blazer RS"
+                                                title="Blazer RS" width="100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/blazer.jpg" class="d-block w-100" alt="Blazer RS"
+                                                title="Blazer RS" width="100%">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../image/blazer.jpg" class="d-block w-100" alt="Blazer RS"
+                                                title="Blazer RS" width="100%">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#BlazerRS" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#BlazerRS" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <p>Diseñado y concebido para reflejar el carácter de un auto de competencia, estilo
+                                    coupé y líneas muy particulares, su finalidad deportiva rodando sobre rines de 20
+                                    pulgadas.
+                                    Cuenta con un motor V10 aspirado de 5.2 litros alimentado por inyección dual,
+                                    ubicado en posición central para un centro de gravedad bajo, generando un máximo de
+                                    610 caballos de potencia y un torque de 560 Nm. Así, logra una velocidad máxima de
+                                    330 km/h y una aceleración de 0 a 100 km/h en apenas 3,2 segundos.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-success">Cotizar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col autos FERRARI">
+                    <div class="card shadow-sm" id="card">
+                        <img src="../image/spider.jpg" alt="Ferrari SF90 Spider" class="rounded" title="Ferrari SF90 Spider">
+
+                        <div class="card-body">
+                            <h2>SF90 SPIDER</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cum doloremque animi nam, delectus vero labore minima eveniet veniam at, ratione minus! Recusandae assumenda possimus, sed sequi minus consequuntur labore.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
+                                        data-bs-target="#Spider">Mas información</button>
+                                    <button type="button" class="btn btn-sm btn-success">Cotizar</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="Spider" tabindex="-1" aria-labelledby="Spider_sf90"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title " id="Spider_sf90">Ferrari SF90 Spider</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="Ferrari-Spider" class="carousel slide"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="../image/audi1.jpg" class="d-block w-100" alt="Ferrari SF90 Spider"
+                                                        title="Ferrari SF90 Spider" width="100%">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="../image/audi1-r8.jpg" class="d-block w-100" alt="Ferrari SF90 Spider"
+                                                        title="Ferrari SF90 Spider" width="100%">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="../image/audi1-r-8.jpg" class="d-block w-100"
+                                                        alt="Ferrari SF90 Spider" title="Ferrari SF90 Spider" width="100%">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#Ferrari-Spider" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#Ferrari-Spider" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                        <p>Diseñado y concebido para reflejar el carácter de un auto de competencia,
+                                            estilo coupé y líneas muy particulares, su finalidad deportiva rodando sobre
+                                            rines de 20 pulgadas.
+                                            Cuenta con un motor V10 aspirado de 5.2 litros alimentado por inyección
+                                            dual, ubicado en posición central para un centro de gravedad bajo, generando
+                                            un máximo de 610 caballos de potencia y un torque de 560 Nm. Así, logra una
+                                            velocidad máxima de 330 km/h y una aceleración de 0 a 100 km/h en apenas 3,2
+                                            segundos.
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-success">Cotizar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================================================== -->
+    <!-- footer -->
+    <!-- ======================================================== -->
+    <div class="container-fluid bg-secondary pt-5 " style="--bs-bg-opacity: .1;">
+        <footer class="px-5">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 mb-4 text-center">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="../index.html#inicio" class="nav-link p-0 text-black">
+                                <h5>Inicio</h5>
+                            </a></li>
+                        <li class="nav-item mb-2"><a href="../index.html#sobre_nosotros"
+                                class="nav-link p-0 text-black">
+                                <h5>Sobre Nosotros</h5>
+                            </a></li>
+                        <li class="nav-item mb-2"><a href="../index.html#equipo" class="nav-link p-0 text-black">
+                                <h5>Equipo</h5>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-2 d-flex justify-content-center mb-4">
+                    <ul class="list-unstyled">
+                        <li class="ms-3 mt-0 d-flex"><a class="btn bg-primary btn-sm-square" href="#"><img
+                                    src="../icons/facebook.svg" alt="facebook" width="24" height="24"><a>
+                                    <p class="px-2 pt-2">CarsNice</p>
+                        </li>
+                        <li class="ms-3 mt-2 d-flex"><a class="btn bg-white btn-sm-square" href="#"><img
+                                    src="../icons/twitter.svg" alt="twitter" width="24" height="24"></a>
+                            <p class="px-2 pt-2">CarsNice</p>
+                        </li>
+                        <li class="ms-3 mt-2 d-flex"><a class="btn btn-sm-square" href="#" id="instagram"><img
+                                    src="../icons/instagram.svg" alt="instagram" width="24" height="24"></a>
+                            <p class="px-2 pt-2">CarsNice</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12  col-sm-6 col-md-5 col-lg-4 col-xl-4 col-xxl-4 offset-md-1 mb-3">
+                    <form class="needs-validation" novalidate>
+                        <h5 class="text-center">Suscríbete</h5>
+                        <p>Recibe anuncios mensual sobre nuestros productos</p>
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="Name" class="form-control" id="name" placeholder="Name" required>
+                                <label for="name">Nombres</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien !
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor, ingrese su nombre.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com" required>
+                                <label for="floatingInput">Correo Electronico</label>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor, ingrese su correo electronico.
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <p id="derechos_reservados" class="text-center pt-5 pb-3">&copy; 2022 CarsNice, Todos los derechos
+                    reservados.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
