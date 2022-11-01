@@ -194,82 +194,58 @@
             <input type="submit" class="btn btn-success" value="Enviar cotización">
         </form>
     </div>
-
-
-
-
-
-
     <!-- ======================================================== -->
     <!-- footer -->
     <!-- ======================================================== -->
     <div class="container-fluid bg-secondary pt-5 mt-5" style="--bs-bg-opacity: .1;">
         <footer class="px-5">
-            <div class="row">
-                <div class="col-12 col-xs-6 col-sm-6 text-center col-md-4 mb-3">
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#inicio" class="nav-link p-0 text-black">
-                                <h5>Inicio</h5>
-                            </a></li>
-                        <li class="nav-item mb-2"><a href="./dashboard/galeriaAutos.html"
-                                class="nav-link p-0 text-black">
-                                <h5>Catalogo de vehiculos</h5>
-                            </a></li>
-                        <li class="nav-item mb-2"><a href="#sobre_nosotros" class="nav-link p-0 text-black">
-                                <h5>Sobre Nosotros</h5>
-                            </a></li>
-                        <li class="nav-item mb-2"><a href="#equipo" class="nav-link p-0 text-black">
-                                <h5>Equipo</h5>
-                            </a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-6 col-xs-6 col-md-2 mb-3">
-                    <ul class="list-unstyled">
-                        <li class="ms-3 mt-0 d-flex"><a class="btn bg-primary btn-sm-square" href="#"><img
-                                    src="../icons/facebook.svg" alt="facebook" width="24" height="24"><a>
-                                    <p class="px-2 pt-2">CarsNice</p>
-                        </li>
-                        <li class="ms-3 mt-2 d-flex"><a class="btn bg-white btn-sm-square" href="#"><img
-                                    src="../icons/twitter.svg" alt="twitter" width="24" height="24"></a>
-                            <p class="px-2 pt-2">CarsNice</p>
-                        </li>
-                        <li class="ms-3 mt-2 d-flex"><a class="btn btn-sm-square" href="#" id="instagram"><img
-                                    src="../icons/instagram.svg" alt="instagram" width="24" height="24"></a>
-                            <p class="px-2 pt-2">CarsNice</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-6 col-xs-6 col-md-2 mb-3 offset-md-1 mb-3">
-                    <form class="needs-validation" novalidate>
-                        <h5>Suscríbete</h5>
-                        <p>Recibe anuncios mensual sobre nuestros productos</p>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre"required>
-                            <label for="ciudad">Ingrese su nombre</label>
-                            <div class="valid-feedback">
-                                ¡Se ve bien!
-                            </div>
-                            <div class="invalid-feedback">
-                                Por favor, ingrese su Nombre.
-                            </div>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="email" placeholder="Ingrese su Correo electronico"required>
-                            <label for="ciudad">Ingrese su Correo electronico</label>
-                            <div class="valid-feedback">
-                                ¡Se ve bien!
-                            </div>
-                            <div class="invalid-feedback">
-                                Por favor, ingrese su Correo electronico.
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                </div>
-                <p class="text-center mt-2">&copy; 2022 CarsNice, Todos los derechos reservados.</p>
+          <div class="row">
+            <div class="col-6 col-md-4 mb-3">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="../index.html#inicio" class="nav-link p-0 text-black"><h5>Inicio</h5></a></li>
+                <li class="nav-item mb-2"><a href="./galeriaAutos.html" class="nav-link p-0 text-black"><h5>Catalogo de vehiculos</h5></a></li>
+                <li class="nav-item mb-2"><a href="../index.html#sobre_nosotros" class="nav-link p-0 text-black"><h5>Sobre Nosotros</h5></a></li>
+                <li class="nav-item mb-2"><a href="../index.html#equipo" class="nav-link p-0 text-black"><h5>Equipo</h5></a></li>
+              </ul>
             </div>
+            <div class="col-6 col-md-2 ">
+              <ul class="list-unstyled">
+                <li class="ms-3 mt-0 d-flex"><a class="btn bg-primary btn-sm-square" href="#"><img src="../icons/facebook.svg" alt="facebook" width="24" height="24"><a><p class="px-2 pt-2">CarsNice</p></li>
+                <li class="ms-3 mt-2 d-flex"><a class="btn bg-white btn-sm-square" href="#"><img src="../icons/twitter.svg" alt="twitter" width="24" height="24"></a><p class="px-2 pt-2">CarsNice</p></li>
+                <li class="ms-3 mt-2 d-flex"><a class="btn btn-sm-square" href="#" id="instagram"><img src="../icons/instagram.svg" alt="instagram" width="24" height="24"></a><p class="px-2 pt-2">CarsNice</p></li>
+              </ul>
+            </div>
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form class="needs-validation" novalidate>
+                <h5>Suscríbete</h5>
+                <p>Recibe anuncios mensual sobre nuestros productos</p>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="name" required>
+                  <div class="valid-feedback">
+                    ¡Se ve bien!
+                  </div>
+                  <div class="invalid-feedback">
+                    Por favor, ingrese su nombre.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="mail" class="form-label">Correo Electronico</label>
+                  <input type="email" class="form-control" id="mail" required>
+                  <div class="valid-feedback">
+                    ¡Se ve bien!
+                  </div>
+                  <div class="invalid-feedback">
+                    Por favor, ingrese su correo electronico.
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
+            <p class="text-center mt-2">&copy; 2022 CarsNice, Todos los derechos reservados.</p>
+          </div>
         </footer>
-    </div>
+      </div>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/app.js"></script>
 
