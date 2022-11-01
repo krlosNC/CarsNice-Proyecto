@@ -19,7 +19,6 @@
     })
 })()
 
-
 function filtros(a) {
   var b = document.getElementsByClassName('autos')
   for (i = 0; i < b.length; i++) {
