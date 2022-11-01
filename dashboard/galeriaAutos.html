@@ -64,19 +64,15 @@
         }
 
         #card {
-            height:550px;
-            overflow:auto;
+            height: 550px;
+            overflow: auto;
         }
 
-        @media(max-width:575px){
-            #card{
+        @media(max-width:575px) {
+            #card {
                 height: auto;
             }
         }
-
-
-
-
     </style>
 
     <!-- fin style -->
@@ -146,9 +142,9 @@
                         <a class="nav-link active" href="../index.html#equipo">Equipo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./login.html" target="_blank"><img
-                                src="../icons/user_2.svg" alt="usuario" width="40" height="40"
-                                id="img_iniciar_sesion"><span id="iniciar_seccion">Iniciar sesión</span></a>
+                        <a class="nav-link" href="./login.html" target="_blank"><img src="../icons/user_2.svg"
+                                alt="usuario" width="40" height="40" id="img_iniciar_sesion"><span
+                                id="iniciar_seccion">Iniciar sesión</span></a>
                     </li>
                 </ul>
             </div>
@@ -161,20 +157,24 @@
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
                 <h1 class="fw-light">CarsNice</h1>
-                <p class="lead text-muted">Una vitrina especializada en autos de gama alta. En CarsNice amamos los carros de lujo y disfrutamos compartiendo esta pasión, por esto buscamos unir el carro ideal con la persona ideal basándonos en las expectativas y necesidades de nuestros clientes y amigos, acercándolos también a nuestro catálogo de servicios.</p>
+                <p class="lead text-muted">Una vitrina especializada en autos de gama alta. En CarsNice amamos los
+                    carros de lujo y disfrutamos compartiendo esta pasión, por esto buscamos unir el carro ideal con la
+                    persona ideal basándonos en las expectativas y necesidades de nuestros clientes y amigos,
+                    acercándolos también a nuestro catálogo de servicios.</p>
                 <p>
-                    <div class="col-lg-6 col-md-8 group mx-auto">
-                        <select class="form-select" aria-label="Default select example" id="filtro">
-                            <option selected>Todos los vehiculos</option>
-                            <option value="AUDI">AUDI</option>
-                            <option value="BMW">BMW</option>
-                            <option value="CHEVROLET">CHEVROLET</option>
-                            <option value="FERRARI">FERRARI</option>
-                            <option value="LAMBORGHINI">LAMBORGHINI</option>
-                            <option value="FORD">FORD</option>
-                        </select>
-                        <input type="button" class="btn btn-primary my-2" onclick="filtros(filtro.value)" value="Filtrar colección">
-                    </div>
+                <div class="col-lg-6 col-md-8 group mx-auto">
+                    <select class="form-select" aria-label="Default select example" id="filtro">
+                        <option selected>Todos los vehiculos</option>
+                        <option value="AUDI">AUDI</option>
+                        <option value="BMW">BMW</option>
+                        <option value="CHEVROLET">CHEVROLET</option>
+                        <option value="FERRARI">FERRARI</option>
+                        <option value="LAMBORGHINI">LAMBORGHINI</option>
+                        <option value="FORD">FORD</option>
+                    </select>
+                    <input type="button" class="btn btn-primary my-2" onclick="filtros(filtro.value)"
+                        value="Filtrar colección">
+                </div>
                 </p>
             </div>
         </div>
@@ -195,7 +195,7 @@
                                 <div class="">
                                     <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
                                         data-bs-target="#Audi_R8">Mas información</button>
-                                    <button type="button" class="btn btn-sm btn-success ">Cotizar</button>
+                                    <a href="cotizacion.html" class="btn btn-sm btn-success" > Cotizar </a>
                                 </div>
 
                             </div>
@@ -248,12 +248,12 @@
                                     Cuenta con un motor V10 aspirado de 5.2 litros alimentado por inyección dual,
                                     ubicado en posición central para un centro de gravedad bajo, generando un máximo de
                                     610 caballos de potencia y un torque de 560 Nm. Así, logra una velocidad máxima de
-                                    330 km/h y una aceleración de 0 a 100 km/h en apenas 3,2 segundos. 
+                                    330 km/h y una aceleración de 0 a 100 km/h en apenas 3,2 segundos.
                                 </p>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-success">Cotizar</button>
+                                <a href="cotizacion.html" class="btn  btn-success" > Cotizar </a>
                             </div>
                         </div>
                     </div>
@@ -271,7 +271,7 @@
                                 <div class="">
                                     <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
                                         data-bs-target="#Audi-Etron">Mas información</button>
-                                    <button type="button" class="btn btn-sm btn-success">Cotizar</button>
+                                    <a href="cotizacion.html" class="btn btn-sm btn-success" > Cotizar </a>
                                 </div>
                             </div>
                         </div>
@@ -279,8 +279,7 @@
                 </div>
 
                 <!-- Modal -->
-                <div class="modal fade" id="Audi-Etron" tabindex="-1" aria-labelledby="Audi_E_tron"
-                    aria-hidden="true">
+                <div class="modal fade" id="Audi-Etron" tabindex="-1" aria-labelledby="Audi_E_tron" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -304,13 +303,13 @@
                                                 title="Audi e-tron" width="100%">
                                         </div>
                                     </div>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#Audi_Etro" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#Audi_Etro"
+                                        data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#Audi_Etro" data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#Audi_Etro"
+                                        data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
@@ -326,7 +325,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-success">Cotizar</button>
+                                <a href="cotizacion.html" class="btn  btn-success" > Cotizar </a>
                             </div>
                         </div>
                     </div>
@@ -347,7 +346,7 @@
                                 <div class="">
                                     <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
                                         data-bs-target="#bmw_z">Mas información</button>
-                                    <button type="button" class="btn btn-sm btn-success">Cotizar</button>
+                                        <a href="cotizacion.html" class="btn btn-sm btn-success" > Cotizar </a>
                                 </div>
                             </div>
                         </div>
@@ -356,8 +355,7 @@
 
 
                 <!-- Modal -->
-                <div class="modal fade" id="bmw_z" tabindex="-1" aria-labelledby="titulo"
-                    aria-hidden="true">
+                <div class="modal fade" id="bmw_z" tabindex="-1" aria-labelledby="titulo" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -381,13 +379,13 @@
                                                 title="BMW Z4" width="100%">
                                         </div>
                                     </div>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#bmw_z4" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#bmw_z4"
+                                        data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#bmw_z4" data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#bmw_z4"
+                                        data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
@@ -403,7 +401,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-success">Cotizar</button>
+                                <a href="cotizacion.html" class="btn  btn-success" > Cotizar </a>
                             </div>
                         </div>
                     </div>
@@ -424,7 +422,7 @@
                                 <div class="">
                                     <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
                                         data-bs-target="#Camaro_six">Mas información</button>
-                                    <button type="button" class="btn btn-sm btn-success">Cotizar</button>
+                                        <a href="cotizacion.html" class="btn btn-sm btn-success" > Cotizar </a>
                                 </div>
                             </div>
                         </div>
@@ -433,8 +431,7 @@
 
 
                 <!-- Modal -->
-                <div class="modal fade" id="Camaro_six" tabindex="-1" aria-labelledby="CamaroSix"
-                    aria-hidden="true">
+                <div class="modal fade" id="Camaro_six" tabindex="-1" aria-labelledby="CamaroSix" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -458,13 +455,13 @@
                                                 title="Camaro six ss" width="100%">
                                         </div>
                                     </div>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#Camaro-SIX" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#Camaro-SIX"
+                                        data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#Camaro-SIX" data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#Camaro-SIX"
+                                        data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
@@ -480,7 +477,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-success">Cotizar</button>
+                                <a href="cotizacion.html" class="btn  btn-success" > Cotizar </a>
                             </div>
                         </div>
                     </div>
@@ -498,7 +495,7 @@
                                 <div class="">
                                     <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
                                         data-bs-target="#Ferrari_STEEDA">Mas información</button>
-                                    <button type="button" class="btn btn-sm btn-success">Cotizar</button>
+                                        <a href="cotizacion.html" class="btn btn-sm btn-success" > Cotizar </a>
                                 </div>
                             </div>
                         </div>
@@ -533,13 +530,13 @@
                                                 title="Ferrari STEEDA" width="100%">
                                         </div>
                                     </div>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#Ferrari-Steeda" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#Ferrari-Steeda"
+                                        data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#Ferrari-Steeda" data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#Ferrari-Steeda"
+                                        data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
@@ -555,7 +552,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-success">Cotizar</button>
+                                <a href="cotizacion.html" class="btn  btn-success" > Cotizar </a>
                             </div>
                         </div>
                     </div>
@@ -576,7 +573,7 @@
                                 <div class="">
                                     <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
                                         data-bs-target="#LAMBORGHINI">Mas información</button>
-                                    <button type="button" class="btn btn-sm btn-success">Cotizar</button>
+                                        <a href="cotizacion.html" class="btn btn-sm btn-success" > Cotizar </a>
                                 </div>
                             </div>
                         </div>
@@ -635,7 +632,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-success">Cotizar</button>
+                                <a href="cotizacion.html" class="btn btn-success" > Cotizar </a>
                             </div>
                         </div>
                     </div>
@@ -649,12 +646,14 @@
 
                         <div class="card-body">
                             <h2>FORD Mustang</h2>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quia aperiam sapiente voluptates corporis unde libero architecto voluptas, explicabo neque hic nemo earum sint minima at nulla impedit nesciunt eligendi!</p>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+                                quia aperiam sapiente voluptates corporis unde libero architecto voluptas, explicabo
+                                neque hic nemo earum sint minima at nulla impedit nesciunt eligendi!</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="">
                                     <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
                                         data-bs-target="#FORD_Mustang">Mas información</button>
-                                    <button type="button" class="btn btn-sm btn-success">Cotizar</button>
+                                        <a href="cotizacion.html" class="btn btn-sm btn-success" > Cotizar </a>
                                 </div>
                             </div>
                         </div>
@@ -665,8 +664,7 @@
 
 
                 <!-- Modal -->
-                <div class="modal fade" id="FORD_Mustang" tabindex="-1" aria-labelledby="FORD"
-                    aria-hidden="true">
+                <div class="modal fade" id="FORD_Mustang" tabindex="-1" aria-labelledby="FORD" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -690,13 +688,13 @@
                                                 title="FORD Mustang" width="100%">
                                         </div>
                                     </div>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#FORD_Mustang_" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#FORD_Mustang_"
+                                        data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#FORD_Mustang_" data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#FORD_Mustang_"
+                                        data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
@@ -712,7 +710,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-success">Cotizar</button>
+                                <a href="cotizacion.html" class="btn  btn-success" > Cotizar </a>
                             </div>
                         </div>
                     </div>
@@ -727,12 +725,15 @@
 
                         <div class="card-body">
                             <h2>Blazer RS</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur odio quod vel possimus ex dolorem, consectetur fugit. Deserunt rem reiciendis, neque, perferendis aliquam ratione consequatur placeat blanditiis dignissimos velit quaerat!</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+                                odio quod vel possimus ex dolorem, consectetur fugit. Deserunt rem reiciendis, neque,
+                                perferendis aliquam ratione consequatur placeat blanditiis dignissimos velit quaerat!
+                            </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="">
                                     <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
                                         data-bs-target="#Blazer">Mas información</button>
-                                    <button type="button" class="btn btn-sm btn-success">Cotizar</button>
+                                        <a href="cotizacion.html" class="btn btn-sm btn-success" > Cotizar </a>
                                 </div>
                             </div>
                         </div>
@@ -742,8 +743,7 @@
 
 
                 <!-- Modal -->
-                <div class="modal fade" id="Blazer" tabindex="-1" aria-labelledby="Blazer_rs"
-                    aria-hidden="true">
+                <div class="modal fade" id="Blazer" tabindex="-1" aria-labelledby="Blazer_rs" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -767,13 +767,13 @@
                                                 title="Blazer RS" width="100%">
                                         </div>
                                     </div>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#BlazerRS" data-bs-slide="prev">
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#BlazerRS"
+                                        data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#BlazerRS" data-bs-slide="next">
+                                    <button class="carousel-control-next" type="button" data-bs-target="#BlazerRS"
+                                        data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
@@ -789,7 +789,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-success">Cotizar</button>
+                                <a href="cotizacion.html" class="btn  btn-success" > Cotizar </a>
                             </div>
                         </div>
                     </div>
@@ -800,16 +800,19 @@
 
                 <div class="col autos FERRARI">
                     <div class="card shadow-sm" id="card">
-                        <img src="../image/spider.jpg" alt="Ferrari SF90 Spider" class="rounded" title="Ferrari SF90 Spider">
+                        <img src="../image/spider.jpg" alt="Ferrari SF90 Spider" class="rounded"
+                            title="Ferrari SF90 Spider">
 
                         <div class="card-body">
                             <h2>SF90 SPIDER</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cum doloremque animi nam, delectus vero labore minima eveniet veniam at, ratione minus! Recusandae assumenda possimus, sed sequi minus consequuntur labore.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cum
+                                doloremque animi nam, delectus vero labore minima eveniet veniam at, ratione minus!
+                                Recusandae assumenda possimus, sed sequi minus consequuntur labore.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="">
                                     <button type="button" class="btn btn-sm btn-primary " data-bs-toggle="modal"
                                         data-bs-target="#Spider">Mas información</button>
-                                    <button type="button" class="btn btn-sm btn-success">Cotizar</button>
+                                        <a href="cotizacion.html" class="btn btn-sm btn-success" > Cotizar </a>
                                 </div>
                             </div>
                         </div>
@@ -826,20 +829,22 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <div id="Ferrari-Spider" class="carousel slide"
-                                            data-bs-ride="carousel">
+                                        <div id="Ferrari-Spider" class="carousel slide" data-bs-ride="carousel">
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img src="../image/audi1.jpg" class="d-block w-100" alt="Ferrari SF90 Spider"
-                                                        title="Ferrari SF90 Spider" width="100%">
+                                                    <img src="../image/audi1.jpg" class="d-block w-100"
+                                                        alt="Ferrari SF90 Spider" title="Ferrari SF90 Spider"
+                                                        width="100%">
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="../image/audi1-r8.jpg" class="d-block w-100" alt="Ferrari SF90 Spider"
-                                                        title="Ferrari SF90 Spider" width="100%">
+                                                    <img src="../image/audi1-r8.jpg" class="d-block w-100"
+                                                        alt="Ferrari SF90 Spider" title="Ferrari SF90 Spider"
+                                                        width="100%">
                                                 </div>
                                                 <div class="carousel-item">
                                                     <img src="../image/audi1-r-8.jpg" class="d-block w-100"
-                                                        alt="Ferrari SF90 Spider" title="Ferrari SF90 Spider" width="100%">
+                                                        alt="Ferrari SF90 Spider" title="Ferrari SF90 Spider"
+                                                        width="100%">
                                                 </div>
                                             </div>
                                             <button class="carousel-control-prev" type="button"
@@ -866,7 +871,7 @@
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
                                             data-bs-dismiss="modal">Cerrar</button>
-                                        <button type="button" class="btn btn-success">Cotizar</button>
+                                            <a href="cotizacion.html" class="btn  btn-success" > Cotizar </a>
                                     </div>
                                 </div>
                             </div>
@@ -883,53 +888,71 @@
     <!-- ======================================================== -->
     <div class="container-fluid bg-secondary pt-5 mt-5" style="--bs-bg-opacity: .1;">
         <footer class="px-5">
-          <div class="row">
-            <div class="col-6 col-md-4 mb-3">
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#inicio" class="nav-link p-0 text-black"><h5>Inicio</h5></a></li>
-                <li class="nav-item mb-2"><a href="./dashboard/galeriaAutos.html" class="nav-link p-0 text-black"><h5>Catalogo de vehiculos</h5></a></li>
-                <li class="nav-item mb-2"><a href="#sobre_nosotros" class="nav-link p-0 text-black"><h5>Sobre Nosotros</h5></a></li>
-                <li class="nav-item mb-2"><a href="#equipo" class="nav-link p-0 text-black"><h5>Equipo</h5></a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-2 ">
-              <ul class="list-unstyled">
-                <li class="ms-3 mt-0 d-flex"><a class="btn bg-primary btn-sm-square" href="#"><img src="../icons/facebook.svg" alt="facebook" width="24" height="24"><a><p class="px-2 pt-2">CarsNice</p></li>
-                <li class="ms-3 mt-2 d-flex"><a class="btn bg-white btn-sm-square" href="#"><img src="../icons/twitter.svg" alt="twitter" width="24" height="24"></a><p class="px-2 pt-2">CarsNice</p></li>
-                <li class="ms-3 mt-2 d-flex"><a class="btn btn-sm-square" href="#" id="instagram"><img src="../icons/instagram.svg" alt="instagram" width="24" height="24"></a><p class="px-2 pt-2">CarsNice</p></li>
-              </ul>
-            </div>
-            <div class="col-md-5 offset-md-1 mb-3">
-              <form class="needs-validation" novalidate>
-                <h5>Suscríbete</h5>
-                <p>Recibe anuncios mensual sobre nuestros productos</p>
-                <div class="mb-3">
-                  <label for="name" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="name" required>
-                  <div class="valid-feedback">
-                    ¡Se ve bien!
-                  </div>
-                  <div class="invalid-feedback">
-                    Por favor, ingrese su nombre.
-                  </div>
+            <div class="row">
+                <div class="col-12 col-xs-6 col-sm-6 text-center col-md-4 mb-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#inicio" class="nav-link p-0 text-black">
+                                <h5>Inicio</h5>
+                            </a></li>
+                        <li class="nav-item mb-2"><a href="./dashboard/galeriaAutos.html"
+                                class="nav-link p-0 text-black">
+                                <h5>Catalogo de vehiculos</h5>
+                            </a></li>
+                        <li class="nav-item mb-2"><a href="#sobre_nosotros" class="nav-link p-0 text-black">
+                                <h5>Sobre Nosotros</h5>
+                            </a></li>
+                        <li class="nav-item mb-2"><a href="#equipo" class="nav-link p-0 text-black">
+                                <h5>Equipo</h5>
+                            </a></li>
+                    </ul>
                 </div>
-                <div class="mb-3">
-                  <label for="mail" class="form-label">Correo Electronico</label>
-                  <input type="email" class="form-control" id="mail" required>
-                  <div class="valid-feedback">
-                    ¡Se ve bien!
-                  </div>
-                  <div class="invalid-feedback">
-                    Por favor, ingrese su correo electronico.
-                  </div>
+                <div class="col-12 col-sm-6 col-xs-6 col-md-2 mb-3 ">
+                    <ul class="list-unstyled">
+                        <li class="ms-3 mt-0 d-flex"><a class="btn bg-primary btn-sm-square" href="#"><img
+                                    src="../icons/facebook.svg" alt="facebook" width="24" height="24"><a>
+                                    <p class="px-2 pt-2">CarsNice</p>
+                        </li>
+                        <li class="ms-3 mt-2 d-flex"><a class="btn bg-white btn-sm-square" href="#"><img
+                                    src="../icons/twitter.svg" alt="twitter" width="24" height="24"></a>
+                            <p class="px-2 pt-2">CarsNice</p>
+                        </li>
+                        <li class="ms-3 mt-2 d-flex"><a class="btn btn-sm-square" href="#" id="instagram"><img
+                                    src="../icons/instagram.svg" alt="instagram" width="24" height="24"></a>
+                            <p class="px-2 pt-2">CarsNice</p>
+                        </li>
+                    </ul>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </form>
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form class="needs-validation" novalidate>
+                        <h5>Suscríbete</h5>
+                        <p>Recibe anuncios mensual sobre nuestros productos</p>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" required>
+                            <div class="valid-feedback">
+                                ¡Se ve bien!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor, ingrese su nombre.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mail" class="form-label">Correo Electronico</label>
+                            <input type="email" class="form-control" id="mail" required>
+                            <div class="valid-feedback">
+                                ¡Se ve bien!
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor, ingrese su correo electronico.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <p class="text-center mt-2">&copy; 2022 CarsNice, Todos los derechos reservados.</p>
             </div>
-            <p class="text-center mt-2">&copy; 2022 CarsNice, Todos los derechos reservados.</p>
-          </div>
         </footer>
-      </div>
+    </div>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/app.js"></script>
 
