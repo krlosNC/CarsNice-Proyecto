@@ -146,7 +146,7 @@
                         <a class="nav-link active" href="../index.html#equipo">Equipo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.google.com/?hl=es" target="_blank"><img
+                        <a class="nav-link" href="./login.html" target="_blank"><img
                                 src="../icons/user_2.svg" alt="usuario" width="40" height="40"
                                 id="img_iniciar_sesion"><span id="iniciar_seccion">Iniciar sesión</span></a>
                     </li>
@@ -415,7 +415,7 @@
 
 
 
-                <div class="col autos CHEVROLET">
+                <div class="col autos CHEVROLET" id="camaro_six">
                     <div class="card shadow-sm" id="card">
                         <img src="../image/slider1.jpg" alt="Camaro SIX SS" title="Camaro SIX SS" class="rounded">
 
@@ -489,7 +489,7 @@
                     </div>
                 </div>
 
-                <div class="col autos FERRARI">
+                <div class="col autos FERRARI" id="ferrari_steeda">
                     <div class="card shadow-sm" id="card">
                         <img src="../image/slider2.jpg" alt="Ferrari STEEDA" class="rounded" title="Ferrari STEEDA">
 
@@ -566,7 +566,7 @@
 
 
 
-                <div class="col autos LAMBORGHINI">
+                <div class="col autos LAMBORGHINI" id="huracan_lambo">
                     <div class="card shadow-sm" id="card">
                         <img src="../image/slider3.jpg" alt="LAMBORGHINI Huracán STO" class="rounded"
                             title="LAMBORGHINI Huracán STO ">
@@ -646,7 +646,7 @@
 
 
 
-                <div class="col autos FORD">
+                <div class="col autos FORD" id="mustang_gt">
                     <div class="card shadow-sm" id="card">
                         <img src="../image/slider4.jpg" alt="FORD Mustang" class="rounded" title="FORD Mustang">
 
@@ -887,19 +887,13 @@
     <div class="container-fluid bg-secondary pt-5 " style="--bs-bg-opacity: .1;">
         <footer class="px-5">
             <div class="row">
-                <div class="col-12 col-sm-6 col-md-4 mb-4 text-center">
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="../index.html#inicio" class="nav-link p-0 text-black">
-                                <h5>Inicio</h5>
-                            </a></li>
-                        <li class="nav-item mb-2"><a href="../index.html#sobre_nosotros"
-                                class="nav-link p-0 text-black">
-                                <h5>Sobre Nosotros</h5>
-                            </a></li>
-                        <li class="nav-item mb-2"><a href="../index.html#equipo" class="nav-link p-0 text-black">
-                                <h5>Equipo</h5>
-                            </a></li>
-                    </ul>
+                        <li class="nav-item mb-2"><a href="../index.html#inicio" class="nav-link p-0 text-black"><h5>Inicio</h5></a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-black"><h5>Catalogo de vehiculos</h5></a></li>
+                        <li class="nav-item mb-2"><a href="../index.html#sobre_nosotros" class="nav-link p-0 text-black"><h5>Sobre Nosotros</h5></a></li>
+                        <li class="nav-item mb-2"><a href="../index.html#equipo" class="nav-link p-0 text-black"><h5>Equipo</h5></a></li>
+                      </ul>
                 </div>
                 <div class="col-12 col-sm-6 col-md-2 d-flex justify-content-center mb-4">
                     <ul class="list-unstyled">
@@ -919,38 +913,32 @@
                 </div>
                 <div class="col-12  col-sm-6 col-md-5 col-lg-4 col-xl-4 col-xxl-4 offset-md-1 mb-3">
                     <form class="needs-validation" novalidate>
-                        <h5 class="text-center">Suscríbete</h5>
+                        <h5>Suscríbete</h5>
                         <p>Recibe anuncios mensual sobre nuestros productos</p>
                         <div class="mb-3">
-                            <div class="form-floating">
-                                <input type="Name" class="form-control" id="name" placeholder="Name" required>
-                                <label for="name">Nombres</label>
-                                <div class="valid-feedback">
-                                    ¡Se ve bien !
-                                </div>
-                                <div class="invalid-feedback">
-                                    Por favor, ingrese su nombre.
-                                </div>
-                            </div>
+                          <label for="name" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" id="name" required>
+                          <div class="valid-feedback">
+                            ¡Se ve bien!
+                          </div>
+                          <div class="invalid-feedback">
+                            Por favor, ingrese su nombre.
+                          </div>
                         </div>
                         <div class="mb-3">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput"
-                                    placeholder="name@example.com" required>
-                                <label for="floatingInput">Correo Electronico</label>
-                                <div class="valid-feedback">
-                                    ¡Se ve bien!
-                                </div>
-                                <div class="invalid-feedback">
-                                    Por favor, ingrese su correo electronico.
-                                </div>
-                            </div>
+                          <label for="mail" class="form-label">Correo Electronico</label>
+                          <input type="email" class="form-control" id="mail" required>
+                          <div class="valid-feedback">
+                            ¡Se ve bien!
+                          </div>
+                          <div class="invalid-feedback">
+                            Por favor, ingrese su correo electronico.
+                          </div>
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
+                      </form>
                 </div>
-                <p id="derechos_reservados" class="text-center pt-5 pb-3">&copy; 2022 CarsNice, Todos los derechos
-                    reservados.</p>
+                <p id="derechos_reservados" class="text-center pt-5 pb-3">&copy; 2022 CarsNice, Todos los derechos reservados.</p>
             </div>
         </footer>
     </div>
