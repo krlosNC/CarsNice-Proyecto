@@ -77,3 +77,12 @@ function filtros(a) {
   }
 
 }
+
+
+
+
+
+
+function cotizacion() {
+console.log("cotizacion realizada");
+};
