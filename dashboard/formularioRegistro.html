@@ -15,7 +15,7 @@
 <body class="bg-body">
     <section class="container my-3 bg-dark redonde border border-primary rounded">
     <!--formulario-->
-        <form action="" class="row g-3 d-flex justify-content-center">
+        <form  class="row g-3 d-flex justify-content-center needs-validation"novalidate>
             <div class="d-flex aling-items-center">
                 <a href="../index.html"><img src="../icons/logo-copia.svg" alt="Logo_empresa" width="140" height="70" class="d-inline-block align-text-top"></a>
                 <span class="titulo font-weight-bold mt-3">CarsNice</span>
@@ -26,39 +26,82 @@
             <div class="row ">
                 <div class="col-sm-12 col-md-6">
                     <label for="formGroupExampleInput" class="form-label ">Nombres</label>
-                <input type="text" class="form-control text-dark " id="formGroupExampleInput" placeholder="Ingrese Nombre" required>  
+                <input type="text" class="form-control text-dark " id="formGroupExampleInput" placeholder="Ingrese Nombres" required> 
+                <div class="valid-feedback">
+
+                    bien hexho!
+                  </div> 
+                  <div class="invalid-feedback ">
+                    Porfavor ingrese los nombres
+                  </div>
                 </div>
 
                 <div class="col-sm-12 col-md-6">
                     <label for="formGroupExampleInput" class="form-label">Apellidos</label>
                     <input type="text" class="form-control text-dark " id="formGroupExampleInput" placeholder=" Ingrese apellidos" required>
+
+                    <div class="valid-feedback">
+
+                        bien hecho!
+                      </div> 
+                      <div class="invalid-feedback ">
+                        Porfavor ingrese los apellidos
+                      </div>
                 </div>
                     </div>
 
                 <div class="row ">
                     <div class="col-sm-12 col-md-6">
                         <label for="tipo" class="form-label">Tipo documento</label>
-                        <select class="form-select  mb-3 p-2">
-                    <option  selected>Tipo de documento</option>
+                        <select class="form-select  mb-3 p-2" required>
+                    <option selected>Tipo de documento</option>
                     <option value="CC">CC</option>
                     <option value="NIT">NIT</option>
                     <option value="CE">CE</option>
                          </select>
+                         <div class="valid-feedback">
+
+                            bien hecho!
+                          </div> 
+                          <div class="invalid-feedback ">
+                            Porfavor seleccione el tipo documento
+                          </div>
 
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <label for="formGroupExampleInput" class="form-label">Numero de Documento</label>
                 <input type="text" class="form-control text-dark" id="formGroupExampleInput" placeholder="Ingrese numero documento" required>
+                <div class="valid-feedback">
+
+                    bien hecho!
+                  </div> 
+                  <div class="invalid-feedback ">
+                    Porfavor ingrese el numero de documento
+                  </div>
                 </div>
                     </div>
                     <div class="row ">
                         <div class="col-sm-12 col-md-6">
                             <label for="formGroupExampleInput" class="form-label">indicativo(+57)</label>
                             <input type="number" class="form-control me-4 text-dark" id="formGroupExampleInput" placeholder="Ingrese indicativo" required>
+                            <div class="valid-feedback">
+
+                                bien hecho!
+                              </div> 
+                              <div class="invalid-feedback ">
+                                Porfavor ingrese el indicativo
+                              </div>
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <label for="formGroupExampleInput" class="form-label">Numero celular</label>
                             <input type="number" class="form-control text-dark" id="formGroupExampleInput" placeholder="Ingrese numero celular" required>
+                            <div class="valid-feedback">
+
+                                bien hecho!
+                              </div> 
+                              <div class="invalid-feedback ">
+                                Porfavor ingrese el numero de celular
+                              </div>
                         </div>
 
                     </div>
@@ -66,11 +109,25 @@
                         <div class="col-sm-12 col-md-6">
                             <label for="formGroupExampleInput" class="form-label">Correo</label>
                 <input type="email" class="form-control text-dark" id="formGroupExampleInput" placeholder="Ingrese correo" required>
+                <div class="valid-feedback">
+
+                    bien hecho!
+                  </div> 
+                  <div class="invalid-feedback ">
+                    Porfavor ingrese el correo
+                  </div>
 
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <label for="formGroupExampleInput" class="form-label">Contraseña</label>
                 <input type="password" class="form-control text-dark" id="formGroupExampleInput" placeholder="Ingrese Contraseña" required>
+                <div class="valid-feedback">
+
+                    bien hecho!
+                  </div> 
+                  <div class="invalid-feedback ">
+                    Porfavor ingrese la contraseña
+                  </div>
 
                         </div>
                     </div>
@@ -82,10 +139,17 @@
                 <label class="form-check-label mx-1 " for="flexCheckDefault">
                   Acepto los terminos y condiciones
                 </label>
+                <div class="valid-feedback">
+
+                    bien hecho!
+                  </div> 
+                  <div class="invalid-feedback ">
+                    Porfavor acepte los terminos
+                  </div>
 
               </div>
               <div class="d-flex justify-content-center">
-                <input type="button" value="Registrar" class="btn btn-primary w-50">
+                <input type="submit" value="Registrar" class="btn btn-primary w-50">
               </div>
               <p class="font-weight-bold text-center text-muted mt-4 mb-3">O inicia sesión con</p>
               <div class="d-flex justify-content-around">
@@ -98,5 +162,8 @@
     </section>
     
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/app.js"></script>
+
+</script>
 </body>
 </html>

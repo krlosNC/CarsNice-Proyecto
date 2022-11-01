@@ -42,11 +42,27 @@
                       <label for="exampleInputEmail1" class="form-label font-weight-bold">Correo</label>
                       <input type="email" class="form-control bg-dark-x border-0 text-light" id="exampleInputEmail1" placeholder="Ingresa tu Correo" aria-describedby="emailHelp" required>
 
+                      <div class="valid-feedback">
+
+                        bien hecho!
+                      </div> 
+                      <div class="invalid-feedback ">
+                        Porfavor ingrese el correo
+                      </div>
+
                     </div>
                     
                     <div class="mb-4">
                       <label for="exampleInputPassword1" class="form-label font-weight-bold">Contraseña</label>
                       <input type="password" class="form-control bg-dark-x border-0 mb-2 text-light" placeholder="Ingresa tu contraseña" id="exampleInputPassword1" required>
+
+                      <div class="valid-feedback">
+
+                        bien hecho!
+                      </div> 
+                      <div class="invalid-feedback ">
+                        Porfavor ingrese la contraseña
+                      </div>
                       <a href="" id="emailHelp" class="form-text text-muted text-decoration-none">¿Has olvidado tu contraseña?</a>
 
 
@@ -66,31 +82,11 @@
             </div>
         </div>
       </section>
-      <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-(() => {
-  'use strict'
-
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  const forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
-  Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-    
-      }
-
-      form.classList.add('was-validated')
-    }, false)
-  })
-})()
-
-
-      </script>
+      
+      
         
     <script src="../js/bootstrap.min.js"></script>
+
+    <script src="../js/app.js"></script>
 </body>
 </html>
