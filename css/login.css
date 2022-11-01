@@ -31,7 +31,27 @@ body {
 .bg-dark-x {
   background-color: var(--dark-x) !important;
 }
+#nombre_empresa{
+  font-size: 30px;
+}
 
+.titulo{
+  font-size: 30px;
+}
 input {
   color: var(--light) !important;
+}
+.bg-body{
+background-image: url(../image/taxi-sign-on-blurred-city-night-background.jpg);
+height: 880px;
+}
+.container{
+  width: 80%;
+}
+
+@media (max-width: 575.98px) { 
+  .container{
+    width: 100%;
+  }
+  
 }
